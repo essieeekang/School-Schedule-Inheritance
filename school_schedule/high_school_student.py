@@ -1,5 +1,6 @@
 from .student import Student
 
+
 class HighSchoolStudent(Student):
     def __init__(self, name, grade, classes,
         has_parking_privileges=False, clubs=None):
@@ -27,5 +28,5 @@ class HighSchoolStudent(Student):
 
         if club_str:
             return f"{self.name} is a member of: {club_str}"
-    
+
         return f"{self.name} hasn't joined a club yet."
